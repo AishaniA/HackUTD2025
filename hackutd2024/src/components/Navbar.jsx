@@ -10,9 +10,9 @@ function Navbar() {
           {/* Logo and Title */}
           <div className="h-1/6 w-1/6">
             <img 
-              src={Logo} // Replace with your image URL or local file path
+              src={Logo} 
               alt="Logo"
-              className="flex h-full w-full object-contain" // Adjust size and margin as needed
+              className="flex h-full w-full object-contain" 
               height = {100}
             />
           </div>
