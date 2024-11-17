@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  height: 100vh; 
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100%;             
+}
+
+
+.right-column {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100%;             
+}

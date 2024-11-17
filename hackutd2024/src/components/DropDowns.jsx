@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Avalon from '../assets/avalon.webp';
+import Sentra from '../assets/sentra.jpg';
 
 function DropdownSelector() {
   // State to hold the selected values
@@ -8,46 +10,276 @@ function DropdownSelector() {
 
   // Data for dropdowns (company -> model -> year)
   const data = {
-    ToyotaAvalon: { 
-      2021: ['Item 1', 'Item 2', 'Item 3'],
-      2022: ['Item 1', 'Item 2', 'Item 3'],
-      2023: ['Item 1', 'Item 2', 'Item 3'],
-      2024: ['Item 1', 'Item 2', 'Item 3'],
-      2025: ['Item 1', 'Item 2', 'Item 3'],
+    Acura: {
+
     },
-    ToyotaCorollaHybrid: {
+  AlfaRomeo:{
+
+  },
+  AstonMartin:{
+
+  },
+  Audi:{
+
+  },
+  Bentley: {
+
+  },
+BMW:{
+
+},
+Bugatti:{
+
+},
+Buick:{
+
+},
+Cadillac: {
+
+},
+Chevrolet: {
+
+},
+Chrysler: {
+
+},
+Dodge: {
+
+},
+Ferrari: {
+
+},
+Fiat: {
+
+},
+Ford: {
+
+},
+Genesis: {
+
+},
+GMC: {
+
+},
+Honda: {
+
+},
+Hyundai: {
+
+},
+Infiniti: {
+
+},
+Jaguar: {
+
+},
+Jeep: {
+
+},
+Kia: {
+
+},
+Lamborghini: {
+
+},
+LandRover: {
+
+},
+Lexus: {
+
+},
+Lincoln: {
+
+},
+Lotus: {
+
+},
+Maserati: {
+
+},
+Mazda: {
+
+},
+McLaren: {
+
+},
+MercedesBenz: {
+
+},
+Mini: {
+
+},
+Mitsubishi: {
+
+},
+Nissan: {
+  Altima: ['2021', '2023' ],
+  Ariya:  ['2021', '2023' ],
+  Armada:  ['2021', '2023' ],
+  Frontier: ['2021', '2023' ],
+  GTR: ['2021', '2023' ],
+  Kicks: ['2021', '2023' ],
+  Leaf: ['2021', '2023' ],
+  Maxima: ['2021', '2023' ],
+  Murano: ['2021', '2023' ],
+  Pathfinder: ['2021', '2023' ],
+  Rogue:['2021', '2023' ],
+  RogueSport:['2021', '2023' ],
+  Sentra :['2021', '2023' ],
+  Titan:['2021', '2023' ],
+  TitanXD:['2021', '2023' ],
+  Versa:['2021', '2023' ],
+  
+},
+Porsche: {
+
+},
+Ram: {
+
+},
+RollsRoyce: {
+
+},
+Subaru: {
+
+},
+Tesla: {
+},
+Toyota: {
+
+      Avalon: ['2021', '2023' ],
+      AvalonHybrid:  ['2021', '2023' ],
+      Camry:  ['2021', '2023' ],
+      CamryHybrid: ['2021', '2023' ],
+      Corolla: ['2021', '2023' ],
+      CorollaHybrid:['2021', '2023' ],
+      Highlander: ['2021', '2023'],
+      Mirai: ['2021', '2023' ],
+      Prius: ['2021', '2023' ],
+      PriusPrime: ['2021', '2023' ],
+      RAV4: ['2021', '2023' ],
+      RAV4Hybrid: ['2021', '2023' ],
+      RAV4Prime: ['2021', '2023' ],
+      Sienna: ['2021', '2023' ],
+      Supra: ['2021', '2023' ],
+      Yaris: ['2021', '2023' ],
+      YarisHybrid: ['2021', '2023' ],
+    },
+    Volkswagen: {
       2021: ['Item A', 'Item B', 'Item C'],
       2022: ['Item A', 'Item B', 'Item C'],
       2023: ['Item A', 'Item B', 'Item C'],
       2024: ['Item A', 'Item B', 'Item C'],
       2025: ['Item A', 'Item B', 'Item C'],
     },
+    Volvo: {
+
+    },
   };
 
+
   const itemDetails = {
-    ToyotaAvalon: {
-      2021: {
-        'Item 1': 'Toyota Avalon 2021, Item 1 description.',
-        'Item 2': 'Toyota Avalon 2021, Item 2 description.',
-        'Item 3': 'Toyota Avalon 2021, Item 3 description.',
+    Toyota: {
+      Avalon: {
+        '2021': (
+          <>
+            <h2 className="text-3xl font-extrabold">Toyota Avalon 2021</h2>
+            
+            {/* Image of the car */}
+            <img
+              src= {Avalon} // Replace with actual image URL
+              alt="Toyota Avalon 2021"
+              className="w-64 h-40 object-cover my-4"
+              height={200}
+            />
+  
+            {/* MPG Combination */}
+            <div className="mt-2">
+              <p className="font-bold">MPG Combination</p>
+              <p className="text-lg">25</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* MPG City */}
+            <div className="mt-2">
+              <p className="font-bold">MPG City</p>
+              <p className="text-lg">22</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* MPG Highway */}
+            <div className="mt-2">
+              <p className="font-bold">MPG Highway</p>
+              <p className="text-lg">31</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* Annual Fuel Cost */}
+            <div className="mt-2">
+              <p className="font-bold">Annual Fuel Cost</p>
+              <p className="text-lg">$1,900</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* GHG Rating */}
+            <div className="mt-2">
+              <p className="font-bold">GHG Rating</p>
+              <p className="text-lg">5</p> {/* Replace with dynamic value */}
+            </div>
+          </>
+        ),
+        '2023': 'Toyota Avalon 2021, Item 2 description.',
       },
-      2022: {
-        'Item 1': 'Toyota Avalon 2022, Item 1 description.',
-        'Item 2': 'Toyota Avalon 2022, Item 2 description.',
-        'Item 3': 'Toyota Avalon 2022, Item 3 description.',
+      AvalonHybrid: {
+        '2021': 'Toyota Avalon 2022, Item 1 description.',
+        '2023': 'Toyota Avalon 2022, Item 2 description.',
       },
       // Add other years here...
     },
-    ToyotaCorollaHybrid: {
-      2021: {
-        'Item A': 'Toyota Corolla Hybrid 2021, Item A description.',
-        'Item B': 'Toyota Corolla Hybrid 2021, Item B description.',
-        'Item C': 'Toyota Corolla Hybrid 2021, Item C description.',
+    Nissan: {
+      Sentra: {
+        '2023': (
+          <>
+            <h2 className="text-3xl font-extrabold">Nissan Sentra 2023</h2>
+            
+            {/* Image of the car */}
+            <img
+              src= {Sentra} // Replace with actual image URL
+              alt="Nissan Sentra 2023"
+              className="w-64 h-40 object-cover my-4"
+              height={200}
+            />
+  
+            {/* MPG Combination */}
+            <div className="mt-2">
+              <p className="font-bold">MPG Combination</p>
+              <p className="text-lg">33</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* MPG City */}
+            <div className="mt-2">
+              <p className="font-bold">MPG City</p>
+              <p className="text-lg">29</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* MPG Highway */}
+            <div className="mt-2">
+              <p className="font-bold">MPG Highway</p>
+              <p className="text-lg">39</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* Annual Fuel Cost */}
+            <div className="mt-2">
+              <p className="font-bold">Annual Fuel Cost</p>
+              <p className="text-lg">$1,450</p> {/* Replace with dynamic value */}
+            </div>
+  
+            {/* GHG Rating */}
+            <div className="mt-2">
+              <p className="font-bold">GHG Rating</p>
+              <p className="text-lg">6</p> {/* Replace with dynamic value */}
+            </div>
+          </>
+        ),
       },
       2022: {
-        'Item A': 'Toyota Corolla Hybrid 2022, Item A description.',
-        'Item B': 'Toyota Corolla Hybrid 2022, Item B description.',
-        'Item C': 'Toyota Corolla Hybrid 2022, Item C description.',
+        
       },
       // Add other years here...
     },
@@ -79,7 +311,7 @@ function DropdownSelector() {
         onChange={handleCompanyChange}
         className="p-2 border border-gray-300 rounded mb-4"
       >
-        <option value="empty" disabled>Select a car model</option>
+        <option value="empty" disabled>Select a car company</option>
         {Object.keys(data).map((model) => (
           <option key={model} value={model}>
             {model}
@@ -94,7 +326,7 @@ function DropdownSelector() {
           onChange={handleModelChange}
           className="p-2 border border-gray-300 rounded mb-4"
         >
-          <option value="empty" disabled>Select a year</option>
+          <option value="empty" disabled>Select a car model</option>
           {Object.keys(data[selectedCompany]).map((year) => (
             <option key={year} value={year}>
               {year}
@@ -110,7 +342,7 @@ function DropdownSelector() {
           onChange={handleYearChange}
           className="p-2 border border-gray-300 rounded mb-4"
         >
-          <option value="empty" disabled>Select an item</option>
+          <option value="empty" disabled>Select a year</option>
           {data[selectedCompany][selectedModel].map((item) => (
             <option key={item} value={item}>
               {item}
@@ -122,7 +354,7 @@ function DropdownSelector() {
       {/* Display Content: Show description based on the selected values */}
       {selectedCompany !== 'empty' && selectedModel !== 'empty' && selectedYear !== 'empty' && (
         <div className="mt-4 p-4 border rounded bg-gray-100">
-          <h2 className="text-xl">Selected Item: {selectedYear}</h2>
+          {/*<h2 className="text-xl">Selected Item: {selectedYear}</h2>*/}
           <p>{itemDetails[selectedCompany][selectedModel][selectedYear]}</p>
         </div>
       )}

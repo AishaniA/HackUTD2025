@@ -1,15 +1,22 @@
-//import './App.css';
+import './App.css';
 
-import Navbar from './components/Navbar';
 import DropDowns from './components/DropDowns';
-function App() {
+import Navbar from './components/Navbar';
 
+function App() {
     return (
-<>
-    <Navbar />
-    <DropDowns />
-    </>
-    )
+        <>
+            <Navbar />
+            <div className="page-container">
+                <div className="left-column">
+                    <DropDowns />
+                </div>
+                <div className="right-column">
+                    <DropDowns />
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default App;

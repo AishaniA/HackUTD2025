@@ -18,7 +18,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <hr className="w-full border-t-0 border-white-100 opacity-50"></hr>
     </div>
   );
 }
