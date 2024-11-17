@@ -1,70 +1,22 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Created by:
+Aishani, Nihita, and Soujanya at HackUTD on November 16-17, 2024.
+## Inspiration
+One of our main inspirations towards the design of our project was Apple's iPhone comparison in their website. We found their approach to comparing data between products to be an easy to read process, allowing their customers to better understand the differences between the products. We decided to adopt their layout to present the Fuel Economy data in order to help employees easily recognize differences between the fuel economies of car models in specific years, and better compare products within the market. We also chose to create a web application because we believe that web applications are more accessible across devices which will help employees analyze data regardless of what device they use.
+## What it does
+Our website allows the user to pick a car manufacturer, model, and year and compare it's fuel economy with that of another car manufacturer, model, and year based on the government's fuel economy data pdfs provided. The website also show's an AI generated response regarding the product's fuel economy overall and how it compares with other products in the market, as well as a graph which compares each category between the chosen products.
+## How we built it
+We built our website application using the frameworks React, Open AI, Flask, and Node.js as well as coding in the languages html, python, JavaScript, and CSS. We also tried to use Open AI APIs in order to include an AI aspect into the web application.
+## Challenges we ran into
+1) One of the biggest challenges we ran into was regarding our backend and figuring out how to use Open AI in our project. As none of us have any experience in backend development, we spent many hours attempting to use the APIs in our project and setting it up. Due to time constraints, we had to pause the backend development and put more focus towards our front end and final product.
+2) The next biggest challenge was our constant design changes. As we received feedback throughout the 24 hours, our frontend design changed multiple times, leading us to have much less time implementing than we had hoped for.  Despite this, we were able to create a product which resembles one of the main features we had planned for the web application that shows the desired user interactions.
+## Accomplishments that we're proud of
+One of the accomplishments that we're proud of is that we were able to set up most frameworks from scratch and make use of our last few hours to create a product which shows our ideas regarding a solution for the challenge. Another accomplishment that we're proud of is challenging ourselves to use frameworks that we are unfamiliar with within such a short period of time, and being able to successfully use some of them.
+## What we learned
+We learned how to set up a back end and use API keys in order to connect an external AI LLM to connect to our own computers. We also learned how to make drop boxes which change based on the selection made in a previous drop box using React states. Another thing we learned is how to analyze the data given and simplify it in order to enhance the user's experience. 
+## What's next for Toyota Data Analyzer
+1) We want to fully integrate the back end with AI so that using parsed data the AI can fill in the data tables by itself. Also we want the AI to be able to make bar charts by itself using the selections made by the user and be able to internally generate the product's fuel economy analysis. Lastly, we want the AI to formulate trends and generalizations based on the data provided for each year.
+2) We also plan to create multiple pages for the web application, allowing for employees to navigate to pages which better suit their analytical needs. Some of these include: general trends (toggled by year, company, and/or model), product comparison, and a future trends predictor.
+3) Regarding our current page, other than AI enhancements, we want to allow for more than 2 product comparisons at a time, allowing the employees to select (reasonably) as many products as desired to compare at a time, without losing readability.
+4) Make the pages more dynamic and suitable for various devices. As of right now, the pages can only be supported on desktop but to help the employees with access, we plan to fix our current design to appear smoother on smaller devices.
+## Current Limitations
+Due to time constraints, the data found in the pdfs are hardcoded into the program to show the expected features when fully developed. Also, the data which is hardcoded is extremely limited and is expected to only run for the cars: Nissan Sentra 2023 and Toyota Avalon 2021. Because of this, the file upload feature's "submit" button will also crash as there is no file handling integrated yet.
