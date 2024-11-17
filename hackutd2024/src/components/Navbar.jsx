@@ -1,28 +1,26 @@
 import React from 'react';
-
+import Logo from '../assets/toyota-logo-1.png';
 
 function Navbar() {
-return(
-<div>
-<div>
-    {/*Content*/}
-    <div className = "flex items-center justify-between px-8 py-4">
-        <h1 className = "poppins-bold text-3xl text-amber-300">UTDFreebies</h1>
-    {/*Nav*/}
-    <div/>
-    <div className = "poppins-semibold flex gap-5 px-2 py-1 text-2xl">
-    <p>new</p>
-    <p>browse</p>
-    <p>upload</p>
-</div>
-{/*icons*/}
+  return (
+    <div>
+      <div>
+        {/* Content */}
+        <div className="flex items-center justify-between px-8 py-4">
+          {/* Logo and Title */}
+          <div className="h-1/6 w-1/6">
+            <img 
+              src={Logo} // Replace with your image URL or local file path
+              alt="Logo"
+              className="flex h-full w-full object-contain" // Adjust size and margin as needed
+              height = {100}
+            />
+          </div>
+        </div>
+      </div>
+      <hr className="w-full border-t-0 border-white-100 opacity-50"></hr>
+    </div>
+  );
+}
 
-
-</div>
-</div>
-
-<hr className = "w-full border t-3 border-gray-400 border opacity-50"></hr>
-</div>
-);
-};
 export default Navbar;
