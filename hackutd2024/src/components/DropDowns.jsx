@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import Avalon from '../assets/avalon.webp';
 import Sentra from '../assets/sentra.jpg';
+import './DropDown.css';
+import { FaGasPump } from "react-icons/fa";
+import { FaCity } from "react-icons/fa";
+import { IoIosSpeedometer } from "react-icons/io";
+import { MdOutlineAttachMoney } from "react-icons/md";
+import { FaGlobeAmericas } from "react-icons/fa";
+
 
 function DropdownSelector() {
   // State to hold the selected values
@@ -183,11 +190,11 @@ Toyota: {
       Avalon: {
         '2021': (
           <>
-            <h2 className="text-3xl font-extrabold">Toyota Avalon 2021</h2>
+            <h2 className="text-5xl font-extrabold">Toyota Avalon 2021</h2>
             
             {/* Image of the car */}
             <img
-              src= {Avalon} // Replace with actual image URL
+              src= {Avalon} 
               alt="Toyota Avalon 2021"
               className="w-64 h-40 object-cover my-4"
               height={200}
@@ -195,32 +202,37 @@ Toyota: {
   
             {/* MPG Combination */}
             <div className="mt-2">
-              <p className="font-bold">MPG Combination</p>
-              <p className="text-lg">25</p> {/* Replace with dynamic value */}
+              <FaGasPump />
+              <h3 className="text-lg">25</h3>
+              <h4 className="font-bold">MPG Combination</h4> 
             </div>
   
             {/* MPG City */}
             <div className="mt-2">
-              <p className="font-bold">MPG City</p>
-              <p className="text-lg">22</p> {/* Replace with dynamic value */}
+              <FaCity/>
+              <h3 className="text-lg">22</h3>
+              <h4 className="font-bold">MPG City</h4> 
             </div>
   
             {/* MPG Highway */}
             <div className="mt-2">
-              <p className="font-bold">MPG Highway</p>
-              <p className="text-lg">31</p> {/* Replace with dynamic value */}
+              <IoIosSpeedometer />
+              <h3 className="text-lg">31</h3> 
+              <h4 className="font-bold">MPG Highway</h4>
             </div>
   
             {/* Annual Fuel Cost */}
             <div className="mt-2">
-              <p className="font-bold">Annual Fuel Cost</p>
-              <p className="text-lg">$1,900</p> {/* Replace with dynamic value */}
+              <MdOutlineAttachMoney />
+              <h3 className="text-lg">$1,900</h3>
+              <h4 className="font-bold">Annual Fuel Cost</h4> 
             </div>
   
             {/* GHG Rating */}
             <div className="mt-2">
-              <p className="font-bold">GHG Rating</p>
-              <p className="text-lg">5</p> {/* Replace with dynamic value */}
+              <FaGlobeAmericas />
+              <h3 className="text-lg">5</h3>
+              <h4 className="font-bold">GHG Rating</h4> 
             </div>
           </>
         ),
@@ -240,7 +252,7 @@ Toyota: {
             
             {/* Image of the car */}
             <img
-              src= {Sentra} // Replace with actual image URL
+              src= {Sentra} 
               alt="Nissan Sentra 2023"
               className="w-64 h-40 object-cover my-4"
               height={200}
@@ -248,32 +260,37 @@ Toyota: {
   
             {/* MPG Combination */}
             <div className="mt-2">
-              <p className="font-bold">MPG Combination</p>
-              <p className="text-lg">33</p> {/* Replace with dynamic value */}
+              <FaGasPump />
+              <h3 className="text-lg">33</h3>
+              <h4 className="font-bold">MPG Combination</h4> 
             </div>
   
             {/* MPG City */}
             <div className="mt-2">
-              <p className="font-bold">MPG City</p>
-              <p className="text-lg">29</p> {/* Replace with dynamic value */}
+              <FaCity/>
+              <h3 className="text-lg">29</h3>
+              <h4 className="font-bold">MPG City</h4> 
             </div>
   
             {/* MPG Highway */}
             <div className="mt-2">
-              <p className="font-bold">MPG Highway</p>
-              <p className="text-lg">39</p> {/* Replace with dynamic value */}
+              <IoIosSpeedometer />
+              <h3 className="text-lg">39</h3>
+              <h4 className="font-bold">MPG Highway</h4> 
             </div>
   
             {/* Annual Fuel Cost */}
             <div className="mt-2">
-              <p className="font-bold">Annual Fuel Cost</p>
-              <p className="text-lg">$1,450</p> {/* Replace with dynamic value */}
+              <MdOutlineAttachMoney />
+              <h3 className="text-lg">$1,450</h3>
+              <h4 className="font-bold">Annual Fuel Cost</h4> 
             </div>
   
             {/* GHG Rating */}
             <div className="mt-2">
-              <p className="font-bold">GHG Rating</p>
-              <p className="text-lg">6</p> {/* Replace with dynamic value */}
+              <FaGlobeAmericas />
+              <h3 className="text-lg">6</h3>
+              <h4 className="font-bold">GHG Rating</h4>
             </div>
           </>
         ),
