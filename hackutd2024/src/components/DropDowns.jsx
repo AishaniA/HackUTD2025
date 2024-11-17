@@ -234,6 +234,14 @@ Toyota: {
               <h3 className="text-lg">5</h3>
               <h4 className="font-bold">GHG Rating</h4> 
             </div>
+
+            {/*AI Analysis*/}
+            <div className="mt-2">
+              <h3>Interpretation
+Fuel Efficiency: The car has solid highway efficiency but performs moderately in city conditions. Its combined 25 MPG is competitive for its class, particularly if it's a midsize sedan or crossover.
+Costs: A $1,900 annual fuel cost is reasonable, but actual costs will vary based on fuel prices and driving habits.
+Environmental Consideration: A GHG rating of 5 suggests the car is neither exceptionally eco-friendly nor particularly high-emission—it performs averagely compared to peers.</h3>
+            </div>
           </>
         ),
         '2023': 'Toyota Avalon 2021, Item 2 description.',
@@ -291,6 +299,13 @@ Toyota: {
               <FaGlobeAmericas />
               <h3 className="text-lg">6</h3>
               <h4 className="font-bold">GHG Rating</h4>
+            </div>
+            {/*AI Analysis*/}
+            <div className="mt-2">
+              <h3>Interpretation
+Fuel Efficiency: This car is highly fuel-efficient, with a combined 33 MPG that sets it apart in its class. Its city MPG (29) is strong for urban commuters, and the highway MPG (39) is excellent for long-distance travel.
+Costs: With a $1,450 annual fuel cost, this vehicle provides significant savings compared to less efficient cars.
+Environmental Consideration: A GHG rating of 6 indicates the car is more environmentally friendly than average, making it a good choice for eco-conscious drivers.</h3>
             </div>
           </>
         ),
@@ -370,7 +385,7 @@ Toyota: {
 
       {/* Display Content: Show description based on the selected values */}
       {selectedCompany !== 'empty' && selectedModel !== 'empty' && selectedYear !== 'empty' && (
-        <div className="mt-4 p-4 border rounded bg-gray-100">
+        <div className="mt-4 p-4 border rounded bg-gray-100 display_flex">
           {/*<h2 className="text-xl">Selected Item: {selectedYear}</h2>*/}
           <p>{itemDetails[selectedCompany][selectedModel][selectedYear]}</p>
         </div>

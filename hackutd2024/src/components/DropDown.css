@@ -6,6 +6,12 @@ font-family: 'Roboto', sans-serif;
 body {
     font-family: 'Roboto', sans-serif;
 }
+.dropdown_height{
+  height: 40px;
+}
+.display_flex{
+  height: 100%;
+}
 .h3{
   font: size 600px;
 }

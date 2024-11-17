@@ -11,10 +11,10 @@ function App() {
             <Navbar />
             <UploadFile/>
             <div className="page-container">
-                <div className="left-column">
+                <div className="left-column dropdown_height display_flex">
                     <DropDowns />
                 </div>
-                <div className="right-column">
+                <div className="right-column dropdown_height display_flex">
                     <DropDowns />
                 </div>
             </div>
