@@ -5,7 +5,7 @@ import './DropDown.css';
 import { FaGasPump } from "react-icons/fa";
 import { FaCity } from "react-icons/fa";
 import { IoIosSpeedometer } from "react-icons/io";
-import { MdOutlineAttachMoney } from "react-icons/md";
+import { FaMoneyCheck } from "react-icons/fa";
 import { FaGlobeAmericas } from "react-icons/fa";
 
 
@@ -190,7 +190,7 @@ Toyota: {
       Avalon: {
         '2021': (
           <>
-            <h2 className="text-5xl font-extrabold">Toyota Avalon 2021</h2>
+            <h2 className="text-7xl font-extrabold">Toyota Avalon 2021</h2>
             
             {/* Image of the car */}
             <img
@@ -202,45 +202,45 @@ Toyota: {
   
             {/* MPG Combination */}
             <div className="mt-2">
-              <FaGasPump />
+              <FaGasPump size={50} />
               <h3 className="text-lg">25</h3>
               <h4 className="font-bold">MPG Combination</h4> 
             </div>
   
             {/* MPG City */}
             <div className="mt-2">
-              <FaCity/>
+              <FaCity size={50}/>
               <h3 className="text-lg">22</h3>
               <h4 className="font-bold">MPG City</h4> 
             </div>
   
             {/* MPG Highway */}
             <div className="mt-2">
-              <IoIosSpeedometer />
+              <IoIosSpeedometer size={50}/>
               <h3 className="text-lg">31</h3> 
               <h4 className="font-bold">MPG Highway</h4>
             </div>
   
             {/* Annual Fuel Cost */}
             <div className="mt-2">
-              <MdOutlineAttachMoney />
+              <FaMoneyCheck size={50}/>
               <h3 className="text-lg">$1,900</h3>
               <h4 className="font-bold">Annual Fuel Cost</h4> 
             </div>
   
             {/* GHG Rating */}
             <div className="mt-2">
-              <FaGlobeAmericas />
+              <FaGlobeAmericas size={50}/>
               <h3 className="text-lg">5</h3>
               <h4 className="font-bold">GHG Rating</h4> 
             </div>
 
             {/*AI Analysis*/}
             <div className="mt-2">
-              <h3>Interpretation
+              <h5>Interpretation
 Fuel Efficiency: The car has solid highway efficiency but performs moderately in city conditions. Its combined 25 MPG is competitive for its class, particularly if it's a midsize sedan or crossover.
 Costs: A $1,900 annual fuel cost is reasonable, but actual costs will vary based on fuel prices and driving habits.
-Environmental Consideration: A GHG rating of 5 suggests the car is neither exceptionally eco-friendly nor particularly high-emission—it performs averagely compared to peers.</h3>
+Environmental Consideration: A GHG rating of 5 suggests the car is neither exceptionally eco-friendly nor particularly high-emission—it <span className ='bold-only'>performs averagely</span> compared to peers.</h5>
             </div>
           </>
         ),
@@ -268,44 +268,44 @@ Environmental Consideration: A GHG rating of 5 suggests the car is neither excep
   
             {/* MPG Combination */}
             <div className="mt-2">
-              <FaGasPump />
+              <FaGasPump size={50}/>
               <h3 className="text-lg">33</h3>
               <h4 className="font-bold">MPG Combination</h4> 
             </div>
   
             {/* MPG City */}
             <div className="mt-2">
-              <FaCity/>
+              <FaCity size={50}/>
               <h3 className="text-lg">29</h3>
               <h4 className="font-bold">MPG City</h4> 
             </div>
   
             {/* MPG Highway */}
             <div className="mt-2">
-              <IoIosSpeedometer />
+              <IoIosSpeedometer size={50}/>
               <h3 className="text-lg">39</h3>
               <h4 className="font-bold">MPG Highway</h4> 
             </div>
   
             {/* Annual Fuel Cost */}
             <div className="mt-2">
-              <MdOutlineAttachMoney />
+              <FaMoneyCheck size={50}/>
               <h3 className="text-lg">$1,450</h3>
               <h4 className="font-bold">Annual Fuel Cost</h4> 
             </div>
   
             {/* GHG Rating */}
             <div className="mt-2">
-              <FaGlobeAmericas />
+              <FaGlobeAmericas size={50}/>
               <h3 className="text-lg">6</h3>
               <h4 className="font-bold">GHG Rating</h4>
             </div>
             {/*AI Analysis*/}
             <div className="mt-2">
-              <h3>Interpretation
-Fuel Efficiency: This car is highly fuel-efficient, with a combined 33 MPG that sets it apart in its class. Its city MPG (29) is strong for urban commuters, and the highway MPG (39) is excellent for long-distance travel.
+              <h5>Interpretation
+Fuel Efficiency: This car is <span className='bold-only'>highly fuel-efficient</span>, with a combined 33 MPG that sets it apart in its class. Its city MPG (29) is strong for urban commuters, and the highway MPG (39) is excellent for long-distance travel.
 Costs: With a $1,450 annual fuel cost, this vehicle provides significant savings compared to less efficient cars.
-Environmental Consideration: A GHG rating of 6 indicates the car is more environmentally friendly than average, making it a good choice for eco-conscious drivers.</h3>
+Environmental Consideration: A GHG rating of 6 indicates the car is more environmentally friendly than average, making it a good choice for eco-conscious drivers.</h5>
             </div>
           </>
         ),
@@ -341,7 +341,7 @@ Environmental Consideration: A GHG rating of 6 indicates the car is more environ
       <select
         value={selectedCompany}
         onChange={handleCompanyChange}
-        className="p-2 border border-gray-300 rounded mb-4"
+        className="p-6 border border-gray-300 rounded mb-4 text-xl"
       >
         <option value="empty" disabled>Select a car company</option>
         {Object.keys(data).map((model) => (
@@ -356,7 +356,7 @@ Environmental Consideration: A GHG rating of 6 indicates the car is more environ
         <select
           value={selectedModel}
           onChange={handleModelChange}
-          className="p-2 border border-gray-300 rounded mb-4"
+          className="p-6 border border-gray-300 rounded mb-4 text-xl"
         >
           <option value="empty" disabled>Select a car model</option>
           {Object.keys(data[selectedCompany]).map((year) => (
@@ -372,7 +372,7 @@ Environmental Consideration: A GHG rating of 6 indicates the car is more environ
         <select
           value={selectedYear}
           onChange={handleYearChange}
-          className="p-2 border border-gray-300 rounded mb-4"
+          className="p-6 border border-gray-300 rounded mb-4 text-xl"
         >
           <option value="empty" disabled>Select a year</option>
           {data[selectedCompany][selectedModel].map((item) => (

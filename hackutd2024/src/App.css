@@ -40,7 +40,7 @@
 .page-container {
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  height: 170vh; 
+  height: 120vh; 
   padding: 20px;
 }
 
@@ -51,7 +51,7 @@
 .left-column {
   display: flex;
   justify-content: center;  
-  align-items: center;      
+  align-items:start;      
   height: 100%;      
   text-align: center;      
   margin-right: 20px; 
@@ -61,7 +61,7 @@
 .right-column {
   display: flex;
   justify-content: center;  
-  align-items: center;      
+  align-items:start;     
   height: 100%;     
   text-align: center;  
   margin-left: 20px;       
@@ -71,12 +71,11 @@
   display: flex;
   position: relative;
   padding: 30px;
-
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 150vh;
   flex-grow: 2;
-  top: 70px;
+  top: 300px;
 }
 
 .graph-image{

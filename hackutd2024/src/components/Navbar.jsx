@@ -5,15 +5,15 @@ function Navbar() {
   return (
     <div>
       <div>
-        {/* Content */}
-        <div className="flex items-center justify-between px-8 py-4">
-          {/* Logo and Title */}
-          <div className="h-1/6 w-1/6">
-            <img 
-              src={Logo} 
+        {/* Navbar Container */}
+        <div className="flex align-middle justify-between items-center px-8 py-4">
+          {/* Logo Section */}
+          <div className="flex justify-center h-1/6 w-1/6">
+            <img
+              src={Logo}
               alt="Logo"
-              className="flex h-full w-full object-contain" 
-              height = {100}
+              className="flex justify-center h-full w-full object-contain"
+              height={75}
             />
           </div>
         </div>
